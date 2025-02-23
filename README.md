@@ -22,7 +22,7 @@ A robust and intelligent port forwarding system built with Node.js, Express, and
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/adityamadhab/backend-port-forwarding.git
    cd backend-port-forwarding
    ```
 
