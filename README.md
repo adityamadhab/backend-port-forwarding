@@ -42,22 +42,42 @@ A robust and intelligent port forwarding system built with Node.js, Express, and
 
 ## 🚦 Usage
 
-1. Start the server:
+### Development Mode
 
-   ```bash
-   npm start
-   ```
+```bash
+# Run in development mode with hot-reload
+npm run dev
+```
 
-2. The server will automatically:
+### Production Mode
 
-   - Try to start on the configured port (default: 3000)
-   - If busy, find the next available port
-   - Log the port forwarding information
+```bash
+# 1. Build the project
+npm run build
 
-3. Check active ports:
-   ```bash
-   GET http://localhost:<port>/ports
-   ```
+# 2. Start the production server
+npm start
+```
+
+The server will automatically:
+
+- Try to start on the configured port (default: 3000)
+- If busy, find the next available port
+- Log the port forwarding information
+
+### Available Scripts
+
+| Command         | Description                                                     |
+| --------------- | --------------------------------------------------------------- |
+| `npm run dev`   | Starts the development server with hot-reload using ts-node-dev |
+| `npm run build` | Compiles TypeScript code to JavaScript in the `dist` folder     |
+| `npm start`     | Runs the compiled JavaScript code from the `dist` folder        |
+
+### Check Active Ports
+
+```bash
+GET http://localhost:<port>/ports
+```
 
 ## 📁 Project Structure
 
@@ -136,4 +156,4 @@ Log format: `[timestamp] [level] message`
 
 ## 👥 Authors
 
-- Your Name - _Initial work_
+- Aditya Madhab - [LinkedIn](https://www.linkedin.com/in/adityamadhab)
